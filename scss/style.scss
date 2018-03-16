@@ -42,6 +42,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+// Header
 .header {
   width: 100%;
   padding-top: 18px;
@@ -117,20 +118,107 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
+// Section triangles
+section {
+  width: 100%;
+  position: relative;
+
+  .section-triangle {
+    position: absolute;
+    bottom: -1px;
+    width: 0;
+    height: 0;
+
+    &_left {
+      left: 0;
+      border-top: 110px solid transparent;
+      border-left: 50vw solid #fff;
+      border-bottom: 0px solid transparent;
+    }
+
+    &_right {
+      right: 0;
+      border-top: 110px solid transparent;
+      border-right: 50vw solid #fff;
+      border-bottom: 0px solid transparent;
+    }
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+  section {
+    .section-triangle {
+      &_left {
+        border-top: 80px solid transparent;
+      }
+
+      &_right {
+        border-top: 80px solid transparent;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  section {
+    .section-triangle {
+      &_left {
+        border-top: 65px solid transparent;
+      }
+
+      &_right {
+        border-top: 65px solid transparent;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  section {
+    .section-triangle {
+      &_left {
+        border-top: 50px solid transparent;
+      }
+
+      &_right {
+        border-top: 50px solid transparent;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 576px) {
+  section {
+    .section-triangle {
+      &_left {
+        border-top: 30px solid transparent;
+      }
+
+      &_right {
+        border-top: 30px solid transparent;
+      }
+    }
+  }
+}
+
+// Section Banner
+
 .banner {
-  display: none;
-  margin-top: 0px;
+  margin-top: 20px;
   width: 100%;
   padding-top: 160px;
   padding-bottom: 210px;
-  background: url(../img/banner__bg.jpg) no-repeat center bottom;
-  position: relative;
+  background: url(../img/banner__bg.jpg) no-repeat center / cover;
+  background-attachment: fixed;
 
   .row {
     display: -ms-flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -238,30 +326,18 @@ input[type=number]::-webkit-outer-spin-button {
         border-radius: 7px;
 
         &::-webkit-input-placeholder {
-          font-family: Akrobat;
-          font-size: 24px;
-          font-weight: 400;
           color: #1e1e1e;
         }
 
         &:-ms-input-placeholder {
-          font-family: Akrobat;
-          font-size: 24px;
-          font-weight: 400;
           color: #1e1e1e;
         }
 
         &::-ms-input-placeholder {
-          font-family: Akrobat;
-          font-size: 24px;
-          font-weight: 400;
           color: #1e1e1e;
         }
 
         &::placeholder {
-          font-family: Akrobat;
-          font-size: 24px;
-          font-weight: 400;
           color: #1e1e1e;
         }
       }
@@ -294,25 +370,286 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     bottom: 75px;
     left: 50%;
-    -webkit-transform: translateX(-30%);
-            transform: translateX(-30%);
+    z-index: 20;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+    img {
+      width: 100%;
+    }
   }
 }
 
 @media only screen and (max-width : 1199px) {
+  .banner {
+    margin-top: 15px;
+    padding-top: 130px;
+    padding-bottom: 170px;
 
+    &-ttl {
+      h1 {
+        font-size: 68px;
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        font-size: 50px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-form {
+      .banner-number {
+        img {
+          width: 40px;
+        }
+
+        span {
+          margin-left: 20px;
+          font-size: 26px;
+        }
+      }
+
+      .form__call-me {
+        padding: 35px 15px;
+        margin-top: 25px;
+
+        span {
+          font-size: 24px;
+        }
+
+        input {
+          min-width: 315px;
+          margin-top: 25px;
+          margin-bottom: 30px;
+          padding: 22px;
+        }
+
+        button {
+          font-size: 24px;
+          padding: 24px 30px;
+          min-width: 315px;
+        }
+      }
+    }
+
+    &__go-down {
+      width: 22px;
+      bottom: 70px;
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .banner {
+    background-attachment: scroll;
+    margin-top: 10px;
+    padding-top: 110px;
+    padding-bottom: 95px;
 
+    &-ttl {
+      text-align: center;
+
+      h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-form {
+      margin-top: 40px;
+
+      .banner-number {
+        img {
+          width: 30px;
+        }
+
+        span {
+          margin-left: 15px;
+          font-size: 22px;
+        }
+      }
+
+      .form__call-me {
+        padding: 15px 10px;
+        margin-top: 25px;
+
+        span {
+          font-size: 20px;
+        }
+
+        input {
+          min-width: 55%;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          padding: 10px;
+          font-size: 20px;
+        }
+
+        button {
+          font-size: 20px;
+          padding: 10px;
+          min-width: 55%;
+        }
+      }
+    }
+
+    &__go-down {
+      width: 18px;
+      bottom: 30px;
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .banner {
+    margin-top: 10px;
+    padding-top: 85px;
+    padding-bottom: 75px;
 
+    &-ttl {
+      h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-form {
+      margin-top: 30px;
+
+      .banner-number {
+        img {
+          width: 25px;
+        }
+
+        span {
+          margin-left: 15px;
+          font-size: 20px;
+        }
+      }
+
+      .form__call-me {
+        padding: 10px;
+        margin-top: 20px;
+
+        span {
+          font-size: 18px;
+        }
+
+        input {
+          min-width: 75%;
+          margin-top: 18px;
+          margin-bottom: 20px;
+          padding: 10px;
+          font-size: 20px;
+        }
+
+        button {
+          font-size: 18px;
+          padding: 10px;
+          min-width: 75%;
+        }
+      }
+    }
+
+    &__go-down {
+      width: 18px;
+      bottom: 20px;
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
+  .banner {
+    margin-top: 10px;
+    padding-top: 85px;
+    padding-bottom: 75px;
 
+    &-ttl {
+      h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &-form {
+      margin-top: 25px;
+
+      .banner-number {
+        img {
+          width: 20px;
+        }
+
+        span {
+          margin-left: 10px;
+          font-size: 18px;
+        }
+      }
+
+      .form__call-me {
+        padding: 10px;
+        margin-top: 20px;
+
+        span {
+          font-size: 16px;
+        }
+
+        input {
+          min-width: 75%;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          padding: 10px;
+          font-size: 16px;
+        }
+
+        button {
+          font-size: 16px;
+          padding: 10px;
+          min-width: 75%;
+        }
+      }
+    }
+
+    &__go-down {
+      width: 16px;
+      bottom: 10px;
+    }
+  }
 }
 
 

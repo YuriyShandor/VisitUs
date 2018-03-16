@@ -145,7 +145,43 @@
   .header-nav {
     .nav-bar {
       .nav-item {
-        margin-left: 50px;
+        position: relative;
+        margin-right: 40px;
+
+        .nav-link {
+          font-size: 22px;
+
+          &::after {
+            -webkit-transform: translateY(5px);
+                    transform: translateY(5px);
+          }
+        }
+
+        &__languages {
+          .languages {
+            margin-right: 40px;
+
+            a {
+              font-size: 22px;
+              font-weight: 400;
+
+              &::after {
+                -webkit-transform: translateY(5px);
+                        transform: translateY(5px);
+              }
+            }
+          }
+
+          .enter-to-cab {
+            span {
+              font-size: 22px;
+            }
+
+            img {
+              width: 28px;
+            }
+          }
+        }
       }
     }
   }
@@ -154,6 +190,7 @@
 @media only screen and (max-width : 991px) {
   .nav-container {
     width: 100%;
+    padding: 0;
 
     .row {
       margin: 0;
@@ -170,7 +207,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1 !important;
 
     .toggler-icon {
       display: -webkit-box;
@@ -184,16 +220,20 @@
       -webkit-transition: all, 0.5s;
       transition: all, 0.5s;
       position: absolute;
-      right: 50px;
+      right: 30px;
+      -webkit-transform: translateY(50%);
+              transform: translateY(50%);
+      transition: all, 0.5s;
 
 
       div {
         width: 30px;
         height: 3px;
-        background: #000;
+        background: #fffefe;
+        border-radius: 3px;
         margin-top: 5px;
-        -webkit-transition: all, 0.5s;
-        transition: all, 0.5s;
+        -webkit-transition: all, 0.95s;
+        transition: all, 0.95s;
 
         &:first-child {
           margin-top: 0;
@@ -205,11 +245,11 @@
       div {
         width: 30px;
         height: 3px;
-        background: #000;
+        background: #fffefe;
         margin-top: 5px;
 
         &:first-child {
-          margin-top: 0;
+          margin-top: 10px;
           -webkit-transform: rotate(45deg);
                   transform: rotate(45deg);
         }
@@ -229,13 +269,22 @@
     .nav-bar {
       display: none;
       position: absolute;
-      top: 30px;
+      top: 50px;
       left: 0;
       width: 100%;
-      z-index: 10;
-      background: gray;
+      z-index: 310;
+      background: #101111;
+      padding: 10px 0;
 
-      .nav-item {
+      li {
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
         position: relative;
         margin-left: 0;
         padding-top: 20px;
@@ -245,35 +294,13 @@
         -webkit-transition: all, .3s;
         transition: all, .3s;
 
-        &::after {
-          content: '';
-          display: block;
-          width: 0;
-          margin: 0 auto;
-          height: 2px;
-          background: black;
-          -webkit-transition: all, 1.5s;
-          transition: all, 1.5s;
-        }
-
         &:hover {
-          background: blue;
-
-          &::after {
-            width: 100%;
-          }
-
-          .nav-link {
-            color: yellow;
-          }
+          background: lighten(#101111, 10%);
         }
+      }
 
-        .nav-link {
-          color: #fff;
-          text-align: center;
-          -webkit-transition: all, .3s;
-          transition: all, .3s;
-        }
+      .nav-item {
+        margin-right: 0;
       }
     }
   }
@@ -284,21 +311,123 @@
 @media only screen and (max-width : 767px) {
   .header-nav {
     .toggler-icon {
+      right: 30px;
+      -webkit-transform: translateY(40%);
+              transform: translateY(40%);
 
+
+      div {
+        width: 25px;
+        height: 2px;
+      }
+    }
+
+    .toggler-icon_close {
+      div {
+        width: 25px;
+        height: 2px;
+      }
+    }
+
+    .nav-bar {
+      top: 37px;
+      padding: 5px 0;
+
+      li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .nav-item {
+        .nav-link {
+          font-size: 20px;
+
+          &::after {
+            -webkit-transform: translateY(3px);
+                    transform: translateY(3px);
+          }
+        }
+
+        &__languages {
+          .languages {
+            margin-right: 40px;
+
+            a {
+              font-size: 20px;
+
+              &::after {
+                -webkit-transform: translateY(3px);
+                        transform: translateY(3px);
+              }
+            }
+          }
+
+          .enter-to-cab {
+            span {
+              font-size: 20px;
+            }
+
+            img {
+              width: 22px;
+            }
+          }
+        }
+      }
     }
   }
 }
 
-@media only screen and (max-width : 567px) {
+@media only screen and (max-width : 576px) {
   .header-nav {
     .toggler-icon {
-
+      right: 20px;
+      -webkit-transform: translateY(23%);
+              transform: translateY(23%);
     }
 
     .nav-bar {
+      top: 32px;
+      padding: 5px 0;
+
+      li {
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+
       .nav-item {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        .nav-link {
+          font-size: 18px;
+
+          &::after {
+            -webkit-transform: translateY(3px);
+                    transform: translateY(3px);
+          }
+        }
+
+        &__languages {
+          .languages {
+            margin-right: 40px;
+
+            a {
+              font-size: 18px;
+
+              &::after {
+                -webkit-transform: translateY(3px);
+                        transform: translateY(3px);
+              }
+            }
+          }
+
+          .enter-to-cab {
+            span {
+              font-size: 18px;
+            }
+
+            img {
+              width: 20px;
+            }
+          }
+        }
       }
     }
   }

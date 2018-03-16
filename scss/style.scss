@@ -206,7 +206,6 @@ section {
 
 .banner {
   margin-top: 20px;
-  width: 100%;
   padding-top: 160px;
   padding-bottom: 210px;
   background: url(../img/banner__bg.jpg) no-repeat center / cover;
@@ -732,7 +731,6 @@ section {
 // Section About Us
 .about-us {
   overflow-x: hidden;
-  width: 100%;
   padding-top: 160px;
   padding-bottom: 100px;
 
@@ -863,7 +861,26 @@ section {
   }
 }
 
+// Section How It Works
+.how-it {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background: #f8f8f8;
 
+  &__discr {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    p {
+      
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
 

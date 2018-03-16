@@ -417,6 +417,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   line-height: 1.2;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -955,4 +956,28 @@ section .section-triangle_right {
     width: 16px;
     bottom: 10px;
   }
+}
+
+.bg-text-block {
+  position: absolute;
+  overflow-x: hidden;
+  width: 200%;
+}
+
+.bg-text-block h2 {
+  font-size: 286px;
+  font-weight: 900;
+  color: #fafafa;
+  text-transform: uppercase;
+}
+
+.about-us {
+  width: 100%;
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+
+.about-us .bg-text-block {
+  top: 10px;
+  left: -425px;
 }

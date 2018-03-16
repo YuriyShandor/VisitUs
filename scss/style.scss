@@ -23,6 +23,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   line-height: 1.2;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -652,6 +653,48 @@ section {
   }
 }
 
+// Section Headings
+
+.bg-text-block {
+  position: absolute;
+  overflow-x: hidden;
+  width: 200%;
+
+  h2 {
+    font-size: 286px;
+    font-weight: 900;
+    color: #fafafa;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+// Section About Us
+.about-us {
+  width: 100%;
+  padding-top: 160px;
+  padding-bottom: 100px;
+
+  .bg-text-block {
+    top: 10px;
+    left: -425px;
+  }
+}
 
 @media only screen and (max-width : 1199px) {
 

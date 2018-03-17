@@ -16,4 +16,32 @@ $(document).ready(function() {
   $('.coop-modal_close').click(function() {
     $('.cooperation-modal').removeClass('active');
   })
+
+  // Trasted Slider
+  $('.trasted-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    rows: 2,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          rows: 1,
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
 });

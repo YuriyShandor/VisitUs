@@ -1956,3 +1956,51 @@ section .section-triangle_right {
     margin: 15px 10px;
   }
 }
+
+.trasted {
+  padding: 60px 0;
+  background: #f8f8f8;
+}
+
+.trasted-slider {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.trasted-slider__slide {
+  height: 120px;
+  width: 290px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.trasted-slider__slide a {
+  width: 90%;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.trasted-slider__slide a img {
+  max-width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+.trasted-slider__slide a:hover img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}

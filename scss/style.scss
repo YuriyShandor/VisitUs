@@ -1,6 +1,7 @@
 // to compile...
 
 $yellow: #f3d11c;
+$black: #1e1e1e;
 
 @import "./_components/_akrobat.scss";
 @import "./_components/_nav-bar.scss";
@@ -320,32 +321,32 @@ section {
         font-family: Akrobat;
         font-size: 24px;
         font-weight: 400;
-        color: #1e1e1e;
+        color: $black;
         border: none;
         outline-color: $yellow;
         border-radius: 7px;
 
         &::-webkit-input-placeholder {
-          color: #1e1e1e;
+          color: $black;
         }
 
         &:-ms-input-placeholder {
-          color: #1e1e1e;
+          color: $black;
         }
 
         &::-ms-input-placeholder {
-          color: #1e1e1e;
+          color: $black;
         }
 
         &::placeholder {
-          color: #1e1e1e;
+          color: $black;
         }
       }
 
       button {
         font-family: Akrobat;
         font-size: 24px;
-        color: #1e1e1e;
+        color: $black;
         text-transform: uppercase;
         text-align: center;
         padding: 24px 30px;
@@ -753,7 +754,7 @@ section {
     p {
       font-size: 18px;
       font-weight: 400;
-      color: #1e1e1e;
+      color: $black;
       margin: 0;
       margin-top: 35px;
 
@@ -875,9 +876,96 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 35px;
 
     p {
-      
+      font-size: 30px;
+      font-weight: 700;
+      color: $black;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  &__block-ttl {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 75px;
+
+    h4 {
+      font-size: 30px;
+      font-weight: 700;
+      color: $black;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  &__scheme {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+
+    &-item {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      margin-top: 60px;
+
+      div {
+        padding: 0 15px;
+        background: #f8f8f8;
+        z-index: 3;
+
+      }
+
+      h6 {
+        margin: 0;
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $black;
+        text-align: center;
+      }
+
+      &:before {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: $yellow;
+        position: absolute;
+        bottom: 105px;
+        left: 0;
+        z-index: 1;
+      }
+
+      &_large {
+        h6 {
+          margin-top: 5px;
+          -webkit-transform: translateY(25px);
+                  transform: translateY(25px);
+        }
+      }
     }
   }
 }

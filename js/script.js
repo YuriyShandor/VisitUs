@@ -21,6 +21,8 @@ $(document).ready(function() {
   $('.trasted-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
+    nextArrow: $(".trasted-slider__arrow_next"),
+    prevArrow: $(".trasted-slider__arrow_prev"),
     rows: 2,
     responsive: [
       {

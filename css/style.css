@@ -573,8 +573,19 @@ section .section-triangle_right {
   margin-top: 20px;
   padding-top: 160px;
   padding-bottom: 210px;
-  background: url(../img/banner__bg.jpg) no-repeat center/cover;
+  background: url(../img/taksi-na-utro.jpg) no-repeat center/cover;
   background-attachment: fixed;
+}
+
+.banner:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .banner .row {
@@ -1432,8 +1443,20 @@ section .section-triangle_right {
 .presentation {
   padding-top: 60px;
   padding-bottom: 75px;
-  background: url(../img/banner__bg.jpg) no-repeat center/cover;
+  background: url(../img/taksi-na-utro.jpg) no-repeat center/cover;
   background-attachment: fixed;
+  position: relative;
+}
+
+.presentation:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .presentation .row {
@@ -1965,6 +1988,8 @@ section .section-triangle_right {
 .trasted-slider {
   width: 100%;
   margin-top: 50px;
+  outline: none;
+  padding: 0 15px;
 }
 
 .trasted-slider__slide {
@@ -1979,6 +2004,7 @@ section .section-triangle_right {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  outline: none;
 }
 
 .trasted-slider__slide a {
@@ -1990,6 +2016,7 @@ section .section-triangle_right {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  outline: none;
 }
 
 .trasted-slider__slide a img {
@@ -2003,4 +2030,164 @@ section .section-triangle_right {
 .trasted-slider__slide a:hover img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+
+.trasted-slider__block {
+  position: relative;
+}
+
+.trasted-slider__block .trasted-slider__arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.trasted-slider__block .trasted-slider__arrow_prev {
+  left: 0;
+}
+
+.trasted-slider__block .trasted-slider__arrow_next {
+  right: 0;
+}
+
+.trasted-slider__block .trasted-slider__arrow img {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1199px) {
+  .trasted {
+    padding: 55px 0;
+  }
+  .trasted-slider {
+    margin-top: 40px;
+    padding: 0 15px;
+  }
+  .trasted-slider__slide {
+    height: 120px;
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .trasted {
+    padding: 50px 0;
+  }
+  .trasted-slider {
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+  .trasted-slider__slide {
+    height: 120px;
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .trasted {
+    padding: 50px 0;
+  }
+  .trasted-slider {
+    margin-top: 10px;
+    padding: 0 15px;
+  }
+  .trasted-slider__slide {
+    height: 120px;
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .trasted {
+    padding: 50px 0;
+  }
+  .trasted-slider {
+    margin-top: 10px;
+    padding: 0 15px;
+  }
+  .trasted-slider__slide {
+    height: 100px;
+    width: 250px;
+  }
+  .trasted-slider__block .trasted-slider__arrow_prev {
+    left: 10px;
+  }
+  .trasted-slider__block .trasted-slider__arrow_next {
+    right: 10px;
+  }
+}
+
+.contacts {
+  padding-top: 70px;
+}
+
+.contacts__block {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contacts__block div {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contacts__block div span {
+  font-size: 30px;
+  font-weight: 400;
+  color: #1e1e1e;
+  margin-left: 25px;
+}
+
+.contacts__block div:first-child {
+  margin-right: 75px;
+}
+
+.contacts__map {
+  margin-top: 45px;
+  width: 100%;
+  background: url(../img/visitus__map.jpg) no-repeat center/cover;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.contacts__map ul {
+  padding-right: 70px;
+  padding-top: 70px;
+  padding-left: calc((100vw - 1170px) / 2);
+  padding-bottom: 80px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e1e1e;
+  list-style: none;
+  margin: 0;
+}
+
+.contacts__map ul li {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.contacts__map ul li:first-child {
+  margin-top: 35px;
 }

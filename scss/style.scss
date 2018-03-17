@@ -204,13 +204,23 @@ section {
 }
 
 // Section Banner
-
 .banner {
   margin-top: 20px;
   padding-top: 160px;
   padding-bottom: 210px;
-  background: url(../img/banner__bg.jpg) no-repeat center / cover;
+  background: url(../img/taksi-na-utro.jpg) no-repeat center / cover;
   background-attachment: fixed;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+  }
 
   .row {
     display: -ms-flex;
@@ -1222,8 +1232,20 @@ section {
 .presentation {
   padding-top: 60px;
   padding-bottom: 75px;
-  background: url(../img/banner__bg.jpg) no-repeat center / cover;
+  background: url(../img/taksi-na-utro.jpg) no-repeat center / cover;
   background-attachment: fixed;
+  position: relative;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+  }
 
   .row {
     display: -ms-flex;
@@ -1825,6 +1847,7 @@ section {
   }
 }
 
+// Section Trasted
 .trasted {
   padding: 60px 0;
   background: #f8f8f8;
@@ -1832,6 +1855,8 @@ section {
   &-slider {
     width: 100%;
     margin-top: 50px;
+    outline: none;
+    padding: 0 15px;
 
     &__slide {
       height: 120px;
@@ -1845,6 +1870,7 @@ section {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      outline: none;
 
       a {
         width: 90%;
@@ -1855,6 +1881,7 @@ section {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+        outline: none;
 
         img {
           max-width: 100%;
@@ -1873,25 +1900,182 @@ section {
       }
     }
   }
+
+  &-slider__block {
+    position: relative;
+
+    .trasted-slider__arrow {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+
+      &_prev {
+        left: 0;
+      }
+
+      &_next {
+        right: 0;
+      }
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 1199px) {
+  .trasted {
+    padding: 55px 0;
 
+    &-slider {
+      margin-top: 40px;
+      padding: 0 15px;
+
+      &__slide {
+        height: 120px;
+        width: 290px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .trasted {
+    padding: 50px 0;
 
+    &-slider {
+      margin-top: 30px;
+      padding: 0 15px;
+
+      &__slide {
+        height: 120px;
+        width: 280px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .trasted {
+    padding: 50px 0;
 
+    &-slider {
+      margin-top: 10px;
+      padding: 0 15px;
+
+      &__slide {
+        height: 120px;
+        width: 260px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
+  .trasted {
+    padding: 50px 0;
 
+    &-slider {
+      margin-top: 10px;
+      padding: 0 15px;
+
+      &__slide {
+        height: 100px;
+        width: 250px;
+      }
+    }
+
+    &-slider__block {
+      .trasted-slider__arrow {
+        &_prev {
+          left: 10px;
+        }
+
+        &_next {
+          right: 10px;
+        }
+      }
+    }
+  }
 }
 
+// Section Contacts
+.contacts {
+  padding-top: 70px;
 
+  &__block {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+
+    div {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+
+      span {
+        font-size: 30px;
+        font-weight: 400;
+        color: $black;
+        margin-left: 25px;
+      }
+
+      &:first-child {
+        margin-right: 75px;
+      }
+    }
+  }
+
+  &__map {
+    margin-top: 45px;
+    width: 100%;
+    background: url(../img/visitus__map.jpg) no-repeat center / cover;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+
+    ul {
+      padding-right: 70px;
+      padding-top: 70px;
+      padding-left: calc((100vw - 1170px) / 2);
+      padding-bottom: 80px;
+      background: rgba(255, 255, 255, 0.85);
+      font-size: 30px;
+      font-weight: 700;
+      color: $black;
+      list-style: none;
+      margin: 0;
+
+      li {
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 15px;
+
+        &:first-child {
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
 

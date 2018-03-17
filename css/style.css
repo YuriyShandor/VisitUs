@@ -1553,3 +1553,49 @@ section .section-triangle_right {
     margin-bottom: 20px;
   }
 }
+
+.benefits {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: #f3d11c;
+}
+
+.benefits__block {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  margin: 0 -75px;
+  margin-top: 20px;
+}
+
+.benefits__block-item {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 30px 75px;
+}
+
+.benefits__block-item h6 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}

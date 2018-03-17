@@ -1450,7 +1450,7 @@ section {
 @media only screen and (max-width : 767px) {
   .benefits {
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 
     &__block {
       &-item {
@@ -1493,21 +1493,214 @@ section {
   }
 }
 
+//Section Cooperation
+.cooperation {
+  padding-top: 166px;
+  padding-bottom: 95px;
+  overflow-x: hidden !important;
+
+  .bg-text-block {
+    left: -750px;
+    top: 30px;
+  }
+
+  &__block {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+
+    p {
+      margin: 0;
+      margin-top: 50px;
+      margin-bottom: 75px;
+      font-size: 24px;
+      font-weight: 700;
+      color: $black;
+    }
+
+    form {
+      width: 100%;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    }
+
+    .visitus__input {
+      min-width: 250px;
+      border: 1px solid $black;
+    }
+
+    .visitus__btn {
+      min-width: 280px;
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
+  .cooperation {
+    padding-top: 130px;
+    padding-bottom: 90px;
 
+    .bg-text-block {
+      left: -600px;
+      top: 30px;
+    }
+
+    &__block {
+      p {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        font-size: 24px;
+      }
+
+      form {
+        width: 100%;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+      }
+
+      .visitus__input {
+        min-width: 250px;
+        border: 1px solid $black;
+      }
+
+      .visitus__btn {
+        min-width: 280px;
+        margin-top: 25px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .cooperation {
+    padding-top: 100px;
+    padding-bottom: 75px;
 
+    .bg-text-block {
+      left: -475px;
+      top: 0px;
+    }
+
+    &__block {
+      p {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 22px;
+      }
+
+      form {
+        width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+      }
+
+      .visitus__input {
+        min-width: 250px;
+        margin: 20px;
+      }
+
+      .visitus__btn {
+        min-width: 250px;
+        margin: 0px 20px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .cooperation {
+    padding-top: 90px;
+    padding-bottom: 60px;
 
+    .bg-text-block {
+      left: -300px;
+      top: 0px;
+    }
+
+    &__block {
+      p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 22px;
+      }
+
+      .visitus__input {
+        min-width: 250px;
+        margin: 20px 10px;
+      }
+
+      .visitus__btn {
+        min-width: 250px;
+        margin: 0px 10px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
+  .cooperation {
+    padding-top: 70px;
+    padding-bottom: 50px;
 
+    .bg-text-block {
+      left: -300px;
+      top: 0px;
+    }
+
+    &__block {
+      padding-left: 15px;
+
+      p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+
+      .visitus__input {
+        min-width: 230px;
+        margin: 20px 10px;
+      }
+
+      .visitus__btn {
+        min-width: 230px;
+        margin: 0px 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 535px) {
+  .cooperation {
+    .bg-text-block {
+      left: -250px;
+      top: 0px;
+    }
+
+    &__block {
+      .visitus__btn {
+        margin: 15px 10px;
+      }
+    }
+  }
 }
 
 

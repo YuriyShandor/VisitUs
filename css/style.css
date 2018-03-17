@@ -679,56 +679,9 @@ section .section-triangle_right {
   line-height: 1;
 }
 
-.banner-form .form__call-me input {
-  min-width: 315px;
+.banner-form .form__call-me .visitus__input {
   margin-top: 25px;
   margin-bottom: 30px;
-  text-align: center;
-  padding: 22px;
-  font-family: Akrobat;
-  font-size: 24px;
-  font-weight: 400;
-  color: #1e1e1e;
-  border: none;
-  outline-color: #f3d11c;
-  border-radius: 7px;
-}
-
-.banner-form .form__call-me input::-webkit-input-placeholder {
-  color: #1e1e1e;
-}
-
-.banner-form .form__call-me input:-ms-input-placeholder {
-  color: #1e1e1e;
-}
-
-.banner-form .form__call-me input::-ms-input-placeholder {
-  color: #1e1e1e;
-}
-
-.banner-form .form__call-me input::placeholder {
-  color: #1e1e1e;
-}
-
-.banner-form .form__call-me button {
-  font-family: Akrobat;
-  font-size: 24px;
-  color: #1e1e1e;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 24px 30px;
-  min-width: 315px;
-  border: none;
-  border-radius: 7px;
-  background: #f3d11c;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: all, .5s;
-  transition: all, .5s;
-}
-
-.banner-form .form__call-me button:hover {
-  background: #dfbe0c;
 }
 
 .banner__go-down {
@@ -777,16 +730,9 @@ section .section-triangle_right {
   .banner-form .form__call-me span {
     font-size: 24px;
   }
-  .banner-form .form__call-me input {
-    min-width: 315px;
+  .banner-form .form__call-me .visitus__input {
     margin-top: 25px;
     margin-bottom: 30px;
-    padding: 22px;
-  }
-  .banner-form .form__call-me button {
-    font-size: 24px;
-    padding: 24px 30px;
-    min-width: 315px;
   }
   .banner__go-down {
     width: 22px;
@@ -833,15 +779,13 @@ section .section-triangle_right {
   .banner-form .form__call-me span {
     font-size: 20px;
   }
-  .banner-form .form__call-me input {
+  .banner-form .form__call-me .visitus__input {
     min-width: 55%;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    font-size: 20px;
   }
-  .banner-form .form__call-me button {
-    font-size: 20px;
+  .banner-form .form__call-me .visitus__btn {
     padding: 10px;
     min-width: 55%;
   }
@@ -886,15 +830,13 @@ section .section-triangle_right {
   .banner-form .form__call-me span {
     font-size: 18px;
   }
-  .banner-form .form__call-me input {
+  .banner-form .form__call-me .visitus__input {
     min-width: 75%;
     margin-top: 18px;
     margin-bottom: 20px;
     padding: 10px;
-    font-size: 20px;
   }
-  .banner-form .form__call-me button {
-    font-size: 18px;
+  .banner-form .form__call-me .visitus__btn {
     padding: 10px;
     min-width: 75%;
   }
@@ -939,15 +881,13 @@ section .section-triangle_right {
   .banner-form .form__call-me span {
     font-size: 16px;
   }
-  .banner-form .form__call-me input {
+  .banner-form .form__call-me .visitus__input {
     min-width: 75%;
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 10px;
-    font-size: 16px;
   }
-  .banner-form .form__call-me button {
-    font-size: 16px;
+  .banner-form .form__call-me .visitus__btn {
     padding: 10px;
     min-width: 75%;
   }
@@ -983,12 +923,73 @@ section .section-triangle_right {
   text-align: center;
 }
 
+.visitus__input {
+  min-width: 315px;
+  text-align: center;
+  padding: 22px;
+  font-family: Akrobat;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+
+.visitus__input::-webkit-input-placeholder {
+  color: #1e1e1e;
+}
+
+.visitus__input:-ms-input-placeholder {
+  color: #1e1e1e;
+}
+
+.visitus__input::-ms-input-placeholder {
+  color: #1e1e1e;
+}
+
+.visitus__input::placeholder {
+  color: #1e1e1e;
+}
+
+.visitus__btn {
+  font-family: Akrobat;
+  font-size: 24px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 24px 30px;
+  min-width: 315px;
+  border: none;
+  border-radius: 7px;
+  background: #f3d11c;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+.visitus__btn:hover {
+  background: #dfbe0c;
+}
+
 @media only screen and (max-width: 1199px) {
   .section-ttl {
     font-size: 60px;
   }
   .bg-text-block h2 {
     font-size: 250px;
+  }
+  .visitus__input {
+    font-size: 24px;
+    padding: 22px;
+    min-width: 315px;
+  }
+  .visitus__btn {
+    font-size: 24px;
+    padding: 24px 30px;
+    min-width: 315px;
   }
 }
 
@@ -999,6 +1000,16 @@ section .section-triangle_right {
   .bg-text-block h2 {
     font-size: 150px;
   }
+  .visitus__input {
+    font-size: 20px;
+    padding: 15px;
+    min-width: 300px;
+  }
+  .visitus__btn {
+    font-size: 20px;
+    padding: 15px;
+    min-width: 300px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1008,6 +1019,16 @@ section .section-triangle_right {
   .bg-text-block h2 {
     font-size: 100px;
   }
+  .visitus__input {
+    font-size: 18px;
+    padding: 12px;
+    min-width: 250px;
+  }
+  .visitus__btn {
+    font-size: 18px;
+    padding: 12px;
+    min-width: 250px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1016,6 +1037,16 @@ section .section-triangle_right {
   }
   .bg-text-block h2 {
     font-size: 75px;
+  }
+  .visitus__input {
+    font-size: 16px;
+    padding: 10px 15px;
+    min-width: 250px;
+  }
+  .visitus__btn {
+    font-size: 16px;
+    padding: 10px 15px;
+    min-width: 250px;
   }
 }
 
@@ -1395,5 +1426,130 @@ section .section-triangle_right {
     margin-top: 2px;
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
+  }
+}
+
+.presentation {
+  padding-top: 60px;
+  padding-bottom: 75px;
+  background: url(../img/banner__bg.jpg) no-repeat center/cover;
+  background-attachment: fixed;
+}
+
+.presentation .row {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.presentation h5 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #fefefe;
+  margin: 0;
+  text-align: center;
+}
+
+.presentation form {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.presentation .visitus__input {
+  margin-right: 65px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .presentation {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+  .presentation .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .presentation h5 {
+    font-size: 30px;
+  }
+  .presentation form {
+    margin-top: 30px;
+  }
+  .presentation .visitus__input {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .presentation {
+    padding-top: 50px;
+    padding-bottom: 65px;
+    background-attachment: scroll;
+  }
+  .presentation h5 {
+    font-size: 26px;
+  }
+  .presentation form {
+    margin-top: 25px;
+  }
+  .presentation .visitus__input {
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .presentation {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .presentation h5 {
+    font-size: 24px;
+  }
+  .presentation form {
+    margin-top: 25px;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .presentation .visitus__input {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .presentation {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .presentation h5 {
+    font-size: 24px;
+  }
+  .presentation form {
+    margin-top: 25px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .presentation .visitus__input {
+    margin-bottom: 20px;
   }
 }

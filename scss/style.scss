@@ -312,56 +312,9 @@ section {
         line-height: 1;
       }
 
-      input {
-        min-width: 315px;
+      .visitus__input {
         margin-top: 25px;
         margin-bottom: 30px;
-        text-align: center;
-        padding: 22px;
-        font-family: Akrobat;
-        font-size: 24px;
-        font-weight: 400;
-        color: $black;
-        border: none;
-        outline-color: $yellow;
-        border-radius: 7px;
-
-        &::-webkit-input-placeholder {
-          color: $black;
-        }
-
-        &:-ms-input-placeholder {
-          color: $black;
-        }
-
-        &::-ms-input-placeholder {
-          color: $black;
-        }
-
-        &::placeholder {
-          color: $black;
-        }
-      }
-
-      button {
-        font-family: Akrobat;
-        font-size: 24px;
-        color: $black;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 24px 30px;
-        min-width: 315px;
-        border: none;
-        border-radius: 7px;
-        background: $yellow;
-        outline: none;
-        cursor: pointer;
-        -webkit-transition: all, .5s;
-        transition: all, .5s;
-
-        &:hover {
-          background: darken($yellow, 7%);
-        }
       }
     }
   }
@@ -424,17 +377,9 @@ section {
           font-size: 24px;
         }
 
-        input {
-          min-width: 315px;
+        .visitus__input {
           margin-top: 25px;
           margin-bottom: 30px;
-          padding: 22px;
-        }
-
-        button {
-          font-size: 24px;
-          padding: 24px 30px;
-          min-width: 315px;
         }
       }
     }
@@ -494,16 +439,14 @@ section {
           font-size: 20px;
         }
 
-        input {
+        .visitus__input {
           min-width: 55%;
           margin-top: 20px;
           margin-bottom: 20px;
           padding: 10px;
-          font-size: 20px;
         }
 
-        button {
-          font-size: 20px;
+        .visitus__btn {
           padding: 10px;
           min-width: 55%;
         }
@@ -562,16 +505,14 @@ section {
           font-size: 18px;
         }
 
-        input {
+        .visitus__input {
           min-width: 75%;
           margin-top: 18px;
           margin-bottom: 20px;
           padding: 10px;
-          font-size: 20px;
         }
 
-        button {
-          font-size: 18px;
+        .visitus__btn {
           padding: 10px;
           min-width: 75%;
         }
@@ -630,16 +571,14 @@ section {
           font-size: 16px;
         }
 
-        input {
+        .visitus__input {
           min-width: 75%;
           margin-top: 15px;
           margin-bottom: 15px;
           padding: 10px;
-          font-size: 16px;
         }
 
-        button {
-          font-size: 16px;
+        .visitus__btn {
           padding: 10px;
           min-width: 75%;
         }
@@ -653,7 +592,7 @@ section {
   }
 }
 
-// Section Headings
+// Section Headings. Text Blocks. Forms
 
 .section-ttl {
   font-size: 65px;
@@ -681,6 +620,57 @@ section {
   }
 }
 
+.visitus__input {
+  min-width: 315px;
+  text-align: center;
+  padding: 22px;
+  font-family: Akrobat;
+  font-size: 24px;
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+
+  &::-webkit-input-placeholder {
+    color: $black;
+  }
+
+  &:-ms-input-placeholder {
+    color: $black;
+  }
+
+  &::-ms-input-placeholder {
+    color: $black;
+  }
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.visitus__btn {
+  font-family: Akrobat;
+  font-size: 24px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 24px 30px;
+  min-width: 315px;
+  border: none;
+  border-radius: 7px;
+  background: $yellow;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+
+  &:hover {
+    background: darken($yellow, 7%);
+  }
+}
+
 @media only screen and (max-width : 1199px) {
   .section-ttl {
     font-size: 60px;
@@ -690,6 +680,18 @@ section {
     h2 {
       font-size: 250px;
     }
+  }
+
+  .visitus__input {
+    font-size: 24px;
+    padding: 22px;
+    min-width: 315px;
+  }
+
+  .visitus__btn {
+    font-size: 24px;
+    padding: 24px 30px;
+    min-width: 315px;
   }
 }
 
@@ -703,6 +705,18 @@ section {
       font-size: 150px;
     }
   }
+
+  .visitus__input {
+    font-size: 20px;
+    padding: 15px;
+    min-width: 300px;
+  }
+
+  .visitus__btn {
+    font-size: 20px;
+    padding: 15px;
+    min-width: 300px;
+  }
 }
 
 @media only screen and (max-width : 767px) {
@@ -715,6 +729,18 @@ section {
       font-size: 100px;
     }
   }
+
+  .visitus__input {
+    font-size: 18px;
+    padding: 12px;
+    min-width: 250px;
+  }
+
+  .visitus__btn {
+    font-size: 18px;
+    padding: 12px;
+    min-width: 250px;
+  }
 }
 
 @media only screen and (max-width : 576px) {
@@ -726,6 +752,18 @@ section {
     h2 {
       font-size: 75px;
     }
+  }
+
+  .visitus__input {
+    font-size: 16px;
+    padding: 10px 15px;
+    min-width: 250px;
+  }
+
+  .visitus__btn {
+    font-size: 16px;
+    padding: 10px 15px;
+    min-width: 250px;
   }
 }
 
@@ -1180,22 +1218,143 @@ section {
   }
 }
 
+// Section Presentation
+.presentation {
+  padding-top: 60px;
+  padding-bottom: 75px;
+  background: url(../img/banner__bg.jpg) no-repeat center / cover;
+  background-attachment: fixed;
 
+  .row {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  h5 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fefefe;
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .visitus__input {
+    margin-right: 65px;
+  }
+}
 
 @media only screen and (max-width : 1199px) {
+  .presentation {
+    padding-top: 60px;
+    padding-bottom: 75px;
 
+    .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+
+    h5 {
+      font-size: 30px;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    .visitus__input {
+      margin-right: 30px;
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .presentation {
+    padding-top: 50px;
+    padding-bottom: 65px;
+    background-attachment: scroll;
 
+    h5 {
+      font-size: 26px;
+    }
+
+    form {
+      margin-top: 25px;
+    }
+
+    .visitus__input {
+      margin-right: 25px;
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .presentation {
+    padding-top: 50px;
+    padding-bottom: 60px;
 
+    h5 {
+      font-size: 24px;
+    }
+
+    form {
+      margin-top: 25px;
+      width: 100%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    }
+
+    .visitus__input {
+      margin-right: 0;
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
+  .presentation {
+    padding-top: 50px;
+    padding-bottom: 50px;
 
+    h5 {
+      font-size: 24px;
+    }
+
+    form {
+      margin-top: 25px;
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+
+    .visitus__input {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 

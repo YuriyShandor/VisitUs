@@ -1357,10 +1357,15 @@ section {
   }
 }
 
+// Section Benefits
 .benefits {
   padding-top: 70px;
   padding-bottom: 100px;
   background: $yellow;
+
+  .cotainer {
+    overflow-x: hidden !important;
+  }
 
   &__block {
     display: -ms-flex;
@@ -1372,8 +1377,6 @@ section {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    overflow-x: hidden;
-    margin: 0 -75px;
     margin-top: 20px;
 
     &-item {
@@ -1388,7 +1391,7 @@ section {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin: 30px 75px;
+      margin: 30px 50px;
 
       h6 {
         font-size: 30px;
@@ -1404,19 +1407,90 @@ section {
 }
 
 @media only screen and (max-width : 1199px) {
+  .benefits {
+    padding-top: 70px;
+    padding-bottom: 90px;
 
+    &__block {
+      &-item {
+        margin: 25px 20px;
+
+        h6 {
+          font-size: 30px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .benefits {
+    padding-top: 60px;
+    padding-bottom: 80px;
 
+    &__block {
+      &-item {
+        margin: 25px 20px;
+
+        img {
+          -webkit-transform: scale(0.85);
+                  transform: scale(0.85);
+        }
+
+        h6 {
+          font-size: 24px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 70px;
 
+    &__block {
+      &-item {
+        margin: 25px 15px;
+
+        img {
+          -webkit-transform: scale(0.65);
+                  transform: scale(0.65);
+        }
+
+        h6 {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 60px;
 
+    &__block {
+      &-item {
+        margin: 20px 10px;
+
+        img {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+        }
+
+        h6 {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
 }
 
 
